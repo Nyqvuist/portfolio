@@ -1,0 +1,68 @@
+.greenGuy.greenGuy {
+    position: absolute;
+    top: 857px;
+    left: 622px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    
+}
+
+.greenGuy.greenGuy:hover {
+    cursor: pointer;
+}
+
+.bonfire.bonfire {
+    position: absolute;
+    top: 910px;
+    left: 693px;
+}
+
+.cat.cat{
+
+    position: absolute;
+    top: 841px;
+    left: 1211px;
+
+}
+
+.blueGuy.blueGuy {
+    position: absolute;
+    top: 827px;
+    left: 882px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+.blueGuy.blueGuy:hover {
+    cursor: pointer;
+}
+
+.brownGuy.brownGuy {
+    position: absolute;
+    top: 860px;
+    left: 1510px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+.brownGuy.brownGuy:hover {
+    cursor: pointer;
+}
+
+.chest.chest{
+    position: absolute;
+    top: 909px;
+    left: 1318px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+.chest.chest{
+    cursor: pointer;
+}
+
+
