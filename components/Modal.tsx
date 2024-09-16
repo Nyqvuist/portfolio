@@ -73,6 +73,7 @@ export default function Modal() {
         h={100}
         w={180}
       />
+      <Image/>
     </>
   );
 }
