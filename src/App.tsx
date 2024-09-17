@@ -14,7 +14,7 @@
 // export default App
 import '@mantine/core/styles.css';
 
-import Modal from '../components/Modal';
+import Modal from './components/Modal';
 
 import { MantineProvider } from '@mantine/core';
 import './App.css'

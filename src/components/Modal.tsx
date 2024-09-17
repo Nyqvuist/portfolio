@@ -1,20 +1,18 @@
 import { Image } from '@mantine/core';
-import './Modal.css';
-import gifGreen from '../src/assets/HWP_Gr_Idle_Sc200.gif';
-import turnGreen from '../src/assets/HWP_Gr_Turn_Sc200.png';
+import '../style/Modal.css';
 import React from 'react';
-import fire from '../src/assets/HWP_Fix_3_Small_CF_Idle_166ms_Sc200.gif';
-import cat from '../src/assets/HWP_Bush_Eye_Sc200.gif';
-import gifBlue from '../src/assets/HWP_Blu_Idle_Sc200.gif';
-import turnBlue from '../src/assets/HWP_Blu_Turn_Sc200.png';
-import gifBrown from '../src/assets/HWP_Brn_Idle_Sc200.gif';
-import turnBrown from '../src/assets/HWP_Brn_Turn_Sc200.png';
-import chestOpen from '../src/assets/HWP_Chest_Opening_Sc200.gif';
-import chestClosed from '../src/assets/HWP_Chest_Eye_Sc200.gif';
+import fire from '../assets/HWP_Fix_3_Small_CF_Idle_166ms_Sc200.gif';
+import cat from '../assets/HWP_Bush_Eye_Sc200.gif';
+import gifBlue from '../assets/HWP_Blu_Idle_Sc200.gif';
+import turnBlue from '../assets/HWP_Blu_Turn_Sc200.png';
+import gifBrown from '../assets/HWP_Brn_Idle_Sc200.gif';
+import turnBrown from '../assets/HWP_Brn_Turn_Sc200.png';
+import chestOpen from '../assets/HWP_Chest_Opening_Sc200.gif';
+import chestClosed from '../assets/HWP_Chest_Eye_Sc200.gif';
+import GreenGuy from '../components/GreenGuy';
 
 export default function Modal() {
 
-  const [green, setGreen] = React.useState(false)
   const [blue, setBlue] = React.useState(false)
   const [brown, setBrown] = React.useState(false)
   const [chest, setChest] = React.useState(false)
@@ -29,15 +27,7 @@ export default function Modal() {
         h={225}
         w={1000}
       ></Image>
-      <Image
-        className="greenGuy"
-        onClick={() => setGreen((prevMode) => !prevMode)}
-        src={green ? turnGreen : gifGreen}
-        radius={"sm"}
-        fit="fill"
-        h={200}
-        w={250}
-      ></Image>
+      <GreenGuy/>
       <Image
         className="cat"
         src={cat}

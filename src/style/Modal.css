@@ -1,16 +1,4 @@
-.greenGuy.greenGuy {
-    position: absolute;
-    top: 857px;
-    left: 622px;
-    border-style: solid;
-    border-color: red;
-    border-width: 1px;
-    
-}
 
-.greenGuy.greenGuy:hover {
-    cursor: pointer;
-}
 
 .bonfire.bonfire {
     position: absolute;
