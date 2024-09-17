@@ -1,0 +1,13 @@
+
+.brownGuy.brownGuy {
+    position: absolute;
+    top: 860px;
+    left: 1510px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+.brownGuy.brownGuy:hover {
+    cursor: pointer;
+}

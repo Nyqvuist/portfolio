@@ -1,0 +1,13 @@
+.blueGuy.blueGuy {
+    position: absolute;
+    top: 827px;
+    left: 882px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+
+.blueGuy.blueGuy:hover {
+    cursor: pointer;
+}
