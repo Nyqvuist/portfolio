@@ -3,11 +3,20 @@
     position: absolute;
     top: 860px;
     left: 1510px;
-    border-style: solid;
+    /*border-style: solid;
     border-color: red;
-    border-width: 1px;
+    border-width: 1px;*/
 }
 
 .brownGuy.brownGuy:hover {
     cursor: pointer;
+}
+
+.textContainerBrown.textContainerBrown {
+    position: absolute;
+    top: 800px;
+    left: 1590px;
+    /*border-style: solid;
+    border-color: red;
+    border-width: 1px;*/
 }

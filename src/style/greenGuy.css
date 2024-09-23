@@ -2,12 +2,21 @@
     position: absolute;
     top: 857px;
     left: 622px;
-    border-style: solid;
+    /*border-style: solid;
     border-color: red;
-    border-width: 1px;
+    border-width: 1px;*/
     
 }
 
 .greenGuy.greenGuy:hover {
     cursor: pointer;
+}
+
+.textContainerGreen.textContainerGreen {
+    position: absolute;
+    top: 790px;
+    left: 720px;
+    /*border-style: solid;
+    border-color: red;
+    border-width: 1px;*/
 }
