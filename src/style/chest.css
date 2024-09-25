@@ -10,3 +10,15 @@
 .chest.chest{
     cursor: pointer;
 }
+
+.mantine-Modal-content{
+
+    background: url("../assets/HWP_Inv_Frame_1920x1080.png") no-repeat;
+    background-size: cover;
+}
+
+.inv_slot.inv_slot{
+
+    margin-top: 75px;
+    margin-left: 75px;
+}

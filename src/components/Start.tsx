@@ -6,8 +6,9 @@ import GreenGuy from './GreenGuy';
 import Bonfire from "./Bonfire";
 import Chest from "./Chest";
 
+
 export default function Start() {
-  
+
   return (
     <>
       <Bonfire/>
