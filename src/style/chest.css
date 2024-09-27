@@ -15,10 +15,36 @@
 
     background: url("../assets/HWP_Inv_Frame_1920x1080.png") no-repeat;
     background-size: cover;
+    height: 810px;
 }
 
 .inv_slot.inv_slot{
+    
+    margin-top: 30px;
+}
 
-    margin-top: 75px;
-    margin-left: 75px;
+.inv_description.inv_description {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+
+}
+
+.inv_divider.inv_divider {
+    margin-top: 37px;
+    margin-left: 6px;
+}
+.colone.colone {
+    
+    padding-left: 130px;
+    padding-top: 25px;
+}
+
+.description_div.description_div {
+
+    position: relative;
+    color: red;
+    size: 50px;
+    top: 100px;
+    left: 100px;
 }
