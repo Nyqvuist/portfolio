@@ -25,6 +25,7 @@
 .inv_slot.inv_slot{
     
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .inv_description.inv_description {
@@ -55,14 +56,14 @@
         left: 75px;
         width: 145px;
         height: 145px;
-        background-color: red;
+        /* background-color: red; */
     }
     .project-title-div {
         top: 75px;
         left: 265px;
         width: 560px;
         height: 145px;
-        background-color: red;
+        /* background-color: red; */
     }
     .project-details-div {
         top: 265px;
@@ -73,9 +74,26 @@
     }
 }
 
-@media (width <= 2550px) {
+.gavlans-game-slot {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    
+
+    .gg-slot-icon {
+        /* background-color: red; */
+        height: 205px;
+        width: 207px;
+        bottom: 23px;
+        left: 22px;
+        cursor: pointer;
+    }
+
+}
+
+/* @media (width <= 2550px) {
     .absolute {
         position: absolute;
         background-color:blue !important;
     }
-}
+} */
