@@ -91,6 +91,38 @@
 
 }
 
+.discord-slot {
+    position: relative;
+    height: 250px;
+    width: 250px;
+
+    .discord-slot-icon {
+        /* background-color: red; */
+        height: 205px;
+        width: 207px;
+        bottom: 23px;
+        left: 22px;
+        cursor: pointer;
+    }
+
+}
+
+.game-slot {
+    position: relative;
+    height: 250px;
+    width: 250px;
+
+    .game-slot-icon {
+        background-color: red;
+        height: 205px;
+        width: 207px;
+        bottom: 23px;
+        left: 22px;
+        cursor: pointer;
+    }
+
+}
+
 /* @media (width <= 2550px) {
     .absolute {
         position: absolute;

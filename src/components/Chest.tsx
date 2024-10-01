@@ -9,19 +9,37 @@ import { Text } from "@mantine/core";
 import box from "../assets/HWP_Ind_Inv_Slot_1920x1080.png";
 import { Grid } from "@mantine/core";
 import textfield from "../assets/HWP_Inner_Inv_w_Textbox_1920x1080.png";
-import test from "../assets/Hassan_Lion_Logo_Alt.png";
+import gavlans from "../assets/Gavlans_Game_Logo_v2.png";
+import hashashin from "../assets/Hassan_Lion_Logo_Alt.png";
+import statue from "../assets/Statue 128x112.png";
 
 export default function Chest() {
   const [chest, setChest] = React.useState(false);
   const [opened, { open, close }] = useDisclosure(false);
   const heightAndWidth = 250;
-  const [details, setDetails] = React.useState('');
-  const [title, setTitle] = React.useState('');
+  const [details, setDetails] = React.useState("This site was created using React, MongoDB, Node.js, Express.js, and Material-UI. This is a fast paced trivia game where the faster the player answers the question right, the more points they get. Fullstack website hosted firebase with a custom database using MongoDB.");
+  const [title, setTitle] = React.useState('Gavlans Game Website');
+  const [icon, setIcon] = React.useState(gavlans);
 
-  const handleClick = () => {
+  const discordClick = () => {
+    setDetails("A discord bot created with discord.js. Using multiple API's like Pokemon and Steam to give users information with slash commands. MongoDB is being used for some commands, and the bot is hosted using AWS.");
+    setTitle('Hashashin Discord Bot');
+    setIcon(hashashin);
+  };
+
+  const gavlansClick = () => {
     setDetails("This site was created using React, MongoDB, Node.js, Express.js, and Material-UI. This is a fast paced trivia game where the faster the player answers the question right, the more points they get. Fullstack website hosted firebase with a custom database using MongoDB.");
     setTitle('Gavlans Game Website');
-  };
+    setIcon(gavlans);
+  }
+
+  const gameClick = () => {
+
+    setDetails('Clicker game made in Unity2D. Game focuses on clicking the statue to gain currency and purchase currency generators. Random events spawn throughout playing the game.');
+    setTitle('Idyllic Statue');
+    setIcon(statue);
+
+  }
 
 
   return (
@@ -47,12 +65,13 @@ export default function Chest() {
                 />
                 <div className={"gg-slot-icon absolute"}>
                   <Image
-                    src={test}
+                    src={gavlans}
                     fit="fill"
-                    onClick={handleClick}
+                    onClick={gavlansClick}
                   />
                 </div>
                 </div>
+                <div className="discord-slot">
                 <Image
                   className="inv_slot"
                   src={box}
@@ -60,8 +79,17 @@ export default function Chest() {
                   h={`${heightAndWidth}`}
                   w={`${heightAndWidth}`}
                 />
+                <div className={"discord-slot-icon absolute"}>
+                  <Image
+                  src={hashashin}
+                  fit="fill"
+                  onClick={discordClick}
+                  />
+                </div>
+                </div>
               </Grid.Col>
               <Grid.Col span={6}>
+                <div className="game-slot">
                 <Image
                   className="inv_slot"
                   src={box}
@@ -69,6 +97,14 @@ export default function Chest() {
                   h={`${heightAndWidth}`}
                   w={`${heightAndWidth}`}
                 />
+                <div className={"game-slot-icon absolute"}>
+                  <Image
+                    src={statue}
+                    fit="fill"
+                    onClick={gameClick}
+                  />
+                </div>
+                </div>
                 <Image
                   className="inv_slot"
                   src={box}
@@ -90,7 +126,7 @@ export default function Chest() {
               />
               <div className={"project-icon-div absolute"}>
                 <Image
-                  src={test}
+                  src={icon}
                   fit="fill"
                 />
               </div>
