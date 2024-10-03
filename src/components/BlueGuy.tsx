@@ -12,7 +12,7 @@ export default function BlueGuy() {
     
   return (
     <div className='container' ref={ref}>
-      {hovered ? <div className='textContainerBlue'><Title order={3}>WHY NO WORK</Title></div>: <></> }
+      {hovered ? <div className='textContainerBlue'><Title order={3} c={"red"}>WHY NO WORK</Title></div>: <></> }
     <Image
         className="blueGuy"
         src={hovered ? turnBlue : gifBlue}

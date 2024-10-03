@@ -3,7 +3,7 @@ import idleGreen from "../assets/HWP_Gr_Idle_Sc200.gif";
 import { useHover } from '@mantine/hooks';
 import turnGreen from "../assets/HWP_Gr_Turn_Sc200.png";
 import "../style/greenGuy.css";
-import { Text } from '@mantine/core';
+import { Title } from '@mantine/core';
 
 
 export default function GreenGuy() {
@@ -12,7 +12,7 @@ export default function GreenGuy() {
     
   return (
     <div className='container' ref={ref}>
-      {hovered ? <div className='textContainerGreen'><Text size ="lg" c = "red">GitHub</Text></div>: <></> }
+      {hovered ? <div className='textContainerGreen'><Title order={1} c={"red"}>GitHub</Title></div>: <></> }
     <Image
         className="greenGuy"
         src={hovered ? turnGreen : idleGreen}
