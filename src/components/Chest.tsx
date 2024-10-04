@@ -11,7 +11,7 @@ import { Grid } from "@mantine/core";
 import textfield from "../assets/HWP_Inner_Inv_w_Textbox_1920x1080.png";
 import gavlans from "../assets/Gavlans_Game_Logo_v2.png";
 import hashashin from "../assets/Hassan_Lion_Logo_Alt.png";
-import statue from "../assets/Statue 128x112.png";
+import statue from "../assets/Statue 112x112.png";
 
 export default function Chest() {
   const [chest, setChest] = React.useState(false);
@@ -131,10 +131,10 @@ export default function Chest() {
                 />
               </div>
               <div className={"project-title-div absolute"}>
-                <Text size="xl">{title}</Text>
+                <Text className='title-text'>{title}</Text>
               </div>
               <div className={"project-details-div absolute"}>
-                <Text size="xl">{details}</Text>
+                <Text className='details-text'>{details}</Text>
               </div>
             </div>
           </Grid.Col>

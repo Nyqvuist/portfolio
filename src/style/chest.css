@@ -64,6 +64,9 @@
         width: 560px;
         height: 145px;
         /* background-color: red; */
+        .title-text {
+            font-size: 40px;
+        }
     }
     .project-details-div {
         top: 265px;
@@ -71,6 +74,9 @@
         width: 750px;
         height: 275px;
         /* background-color: red; */
+        .details-text{
+            font-size: 35px;
+        }
     }
 }
 
@@ -113,7 +119,7 @@
     width: 250px;
 
     .game-slot-icon {
-        background-color: red;
+        /* background-color: red; */
         height: 205px;
         width: 207px;
         bottom: 23px;
