@@ -11,16 +11,20 @@ export default function BlueGuy() {
   const { hovered, ref } = useHover();
     
   return (
-    <div className='container' ref={ref}>
-      {hovered ? <div className='textContainerBlue'><Title order={3} c={"red"}>WHY NO WORK</Title></div>: <></> }
-    <Image
-        className="blueGuy"
-        src={hovered ? turnBlue : gifBlue}
-        radius={"sm"}
-        fit="fill"
-        h={hovered ? 220 : 200}
-        w={hovered ? 240 : 220}
-      />
+    <div className='blueGuyContainer' ref={ref}>
+      <div className={"blueGuy"}>
+        {hovered ? 
+        <div className={'textContainerBlue'}><Title order={3} c={"red"}>LinkedIn</Title></div>
+        : <></> }
+        <Image
+          src={hovered ? turnBlue : gifBlue}
+          radius={"sm"}
+          fit="fill"
+          h={ 220 }
+          w={ 220 }
+        >
+        </Image>
+      </div>
     </div>
   )
 }

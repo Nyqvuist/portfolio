@@ -1,22 +1,28 @@
-.blueGuy.blueGuy {
+.blueGuyContainer{
+
     position: absolute;
     top: 827px;
     left: 882px;
-    /*border-style: solid;
-    border-color: red;
-    border-width: 1px;*/
-}
+    background-color: red;
 
+    .blueGuy {
+
+        transition: transform .3s;
+
+        .textContainerBlue {
+            text-align: center;
+            background-color: black;
+            padding-left: 16px;
+            /*border-style: solid;
+            border-color: red;
+            border-width: 1px;*/
+        }
+
+    }
+    
+}
 
 .blueGuy.blueGuy:hover {
     cursor: pointer;
-}
-
-.textContainerBlue.textContainerBlue {
-    position: absolute;
-    top: 766px;
-    left: 968px;
-    /*border-style: solid;
-    border-color: red;
-    border-width: 1px;*/
+    transform: scale(1.1);
 }

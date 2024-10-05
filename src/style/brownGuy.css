@@ -1,22 +1,28 @@
+.brownGuyContainer{
 
-.brownGuy.brownGuy {
     position: absolute;
     top: 860px;
     left: 1510px;
-    /*border-style: solid;
-    border-color: red;
-    border-width: 1px;*/
+    background-color: red;
+
+    .brownGuy {
+
+        transition: transform .3s;
+
+        .textContainerBrown {
+            text-align: center;
+            background-color: black;
+            padding-right: 32px;
+            /*border-style: solid;
+            border-color: red;
+            border-width: 1px;*/
+        }
+
+    }
+    
 }
 
 .brownGuy.brownGuy:hover {
     cursor: pointer;
-}
-
-.textContainerBrown.textContainerBrown {
-    position: absolute;
-    top: 800px;
-    left: 1590px;
-    /*border-style: solid;
-    border-color: red;
-    border-width: 1px;*/
+    transform: scale(1.1);
 }
