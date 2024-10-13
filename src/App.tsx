@@ -2,15 +2,26 @@ import '@mantine/core/styles.css';
 
 import Start from './components/Start';
 
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, MantineProvider, rem } from '@mantine/core';
 import "./Alkhemikal/Alkhemikal.css";
+import "./Jacquard24/Jacquard24-Regular.css";
 
 const theme = createTheme({
-  fontFamily: "Alkhemikal",
+  fontFamily: "Jacquard24-Regular",
   headings: {
     // Use default theme if you want to provide default Mantine fonts as a fallback
-    fontFamily: "Alkhemikal",
+    fontFamily: "Jacquard24-Regular",
+
+    sizes: {
+      h1: {
+        fontSize: rem(110),
+      },
+      h2: {
+        fontSize: rem(60),
+      },
+    },
   },
+  
 });
 
 

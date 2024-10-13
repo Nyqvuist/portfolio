@@ -20,13 +20,13 @@ export default function GreenGuy() {
         <Image
           src={arrow}
           fit='fill'
-          h={25}
-          w={25}
+          h={35}
+          w={30}
         />
-          <div className='greenText'>
-            <Title order={2} c={"red"}>Github</Title>
-          </div>
         </div>
+          <div className='greenText'>
+            <Title order={3} c={"red"}>Github</Title>
+          </div>
       </div>
       : <></> }
       <Image

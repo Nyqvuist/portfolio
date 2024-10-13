@@ -3,7 +3,7 @@
     position: absolute;
     top: 857px;
     left: 622px;
-    background-color: red;
+    
 
     .greenGuy {
 
@@ -18,8 +18,16 @@
 
             .greenText {
                     
-                background-color: black;
+                
                 padding-left: 48px;
+            }
+
+            .arrowContainerGreen {
+
+                display: flex;
+                justify-content: center;
+                padding-left: 45px;
+                padding-bottom: 10px;
             }
             
         }
@@ -28,12 +36,11 @@
     
 }
 
-.arrowContainerGreen {
-
-    text-align: center;
-}
-
 .greenGuy.greenGuy:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.greenGuyContainer:hover {
+    top: 825px;
 }
