@@ -3,7 +3,6 @@
     position: absolute;
     top: 860px;
     left: 1550px;
-    background-color: red;
 
     .brownGuy {
 
@@ -11,11 +10,22 @@
 
         .textContainerBrown {
             text-align: center;
-            background-color: black;
-            padding-right: 32px;
             /*border-style: solid;
             border-color: red;
             border-width: 1px;*/
+        }
+
+        .brownText {
+            position: absolute;
+            top: -28px;
+            left: 74px;
+        }
+
+        .arrowContainerBrown {
+
+            position: absolute;
+            top: -72px;
+            left: 80px;
         }
 
     }
@@ -24,5 +34,5 @@
 
 .brownGuy.brownGuy:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }

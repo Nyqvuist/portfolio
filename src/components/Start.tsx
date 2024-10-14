@@ -12,7 +12,7 @@ export default function Start() {
 
   return (
     <>
-    <div className='titleText'>
+    {/* <div className='titleText'>
     <Title order={1} c={"red"}> Hassan Shirazi
     </Title>
     </div>
@@ -20,7 +20,7 @@ export default function Start() {
       <Title order={2} c={"red"}>
         Choose Your Character!
       </Title>
-    </div>
+    </div> */}
       <Bonfire/>
       <GreenGuy/>
       <Cat/>

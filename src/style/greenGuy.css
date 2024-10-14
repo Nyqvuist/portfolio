@@ -17,17 +17,17 @@
             border-width: 1px;*/
 
             .greenText {
-                    
-                
-                padding-left: 48px;
+
+                position: absolute;
+                top: -27px;
+                left: 109px;
             }
 
             .arrowContainerGreen {
 
-                display: flex;
-                justify-content: center;
-                padding-left: 45px;
-                padding-bottom: 10px;
+                position: absolute;
+                top: -68px;
+                left: 119px;
             }
             
         }
@@ -38,9 +38,5 @@
 
 .greenGuy.greenGuy:hover {
     cursor: pointer;
-    transform: scale(1.1);
-}
-
-.greenGuyContainer:hover {
-    top: 825px;
+    transform: scale(1.2);
 }

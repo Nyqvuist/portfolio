@@ -17,17 +17,15 @@
         }
 
         .blueText {
-                    
-                
-            padding-left: 16px;
+            position: absolute;
+            top: -24px;
+            left: 82px;
         }
 
         .arrowContainerBlue {
-
-            display: flex;
-            justify-content: center;
-            padding-left: 23px;
-            padding-bottom: 10px;
+            position: absolute;
+            top: -65px;
+            left: 104px;
         }
 
     }
@@ -36,10 +34,6 @@
 
 .blueGuy.blueGuy:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
-.blueGuyContainer:hover {
-
-    top: 800px;
-}

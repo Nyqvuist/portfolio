@@ -2,16 +2,22 @@
     position: absolute;
 }
 
-.chest.chest{
+.chestContainer{
     position: absolute;
     top: 909px;
     left: 1318px;
     /*border-style: solid;
     border-color: red;
     border-width: 1px;*/
+
+    .arrowContainerChest {
+        position: absolute;
+        top: -54px;
+        left: 50px;
+    }
 }
 
-.chest.chest{
+.chestContainer{
     cursor: pointer;
 }
 

@@ -12,8 +12,11 @@ import textfield from "../assets/HWP_Inner_Inv_w_Textbox_1920x1080.png";
 import gavlans from "../assets/Gavlans_Game_Logo_v2.png";
 import hashashin from "../assets/Hassan_Lion_Logo_Alt.png";
 import statue from "../assets/Statue 112x112.png";
+import { useHover } from '@mantine/hooks';
+import arrow from "../assets/HWP_Yellow_Arrow_Sc200.gif";
 
 export default function Chest() {
+  const { hovered, ref } = useHover();
   const [chest, setChest] = React.useState(false);
   const [opened, { open, close }] = useDisclosure(false);
   const heightAndWidth = 250;
@@ -141,8 +144,16 @@ export default function Chest() {
         </Grid>
       </Modal>
       <div className="button-div" onClick={open}>
+        <div className="chestContainer" ref={ref}>
+        {hovered ? <div className='arrowContainerChest'>
         <Image
-          className="chest"
+          src={arrow}
+          fit='fill'
+          h={35}
+          w={30}
+        />
+        </div> : <></>}
+        <Image
           onClick={() => setChest((prevMode) => !prevMode)}
           src={opened ? chestOpen : chestClosed}
           radius={"sm"}
@@ -150,6 +161,7 @@ export default function Chest() {
           h={100}
           w={180}
         />
+        </div>
       </div>
     </>
   );
