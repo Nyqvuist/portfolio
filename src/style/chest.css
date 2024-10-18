@@ -54,7 +54,7 @@
     position: relative;
     width: calc(59.375rem* var(--mantine-scale));
     height: calc(37.5rem* var(--mantine-scale));
-    color: red;
+    color: gray;
     top: 100px;
     left: 100px;
     .project-icon-div {

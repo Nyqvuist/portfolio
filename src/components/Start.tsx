@@ -12,15 +12,17 @@ export default function Start() {
 
   return (
     <>
-    {/* <div className='titleText'>
-    <Title order={1} c={"red"}> Hassan Shirazi
-    </Title>
-    </div>
-    <div className='chooseCharacter'>
-      <Title order={2} c={"red"}>
-        Choose Your Character!
+    <div className='titleContainer'>
+      <div className='titleText'>
+      <Title order={1} c={"gray"}> Hassan Shirazi
       </Title>
-    </div> */}
+      </div>
+      <div className='chooseCharacter'>
+        <Title order={2} c={"gray"}>
+          Choose Your Character!
+        </Title>
+      </div>
+    </div>
       <Bonfire/>
       <GreenGuy/>
       <Cat/>

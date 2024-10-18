@@ -1,10 +1,14 @@
-.titleText {
-    text-align: center;
-    margin-top: 189px;
-}
+.titleContainer {
+    padding-top: 180px;
 
+    .titleText {
+        text-align: center;
+    }
+    
+    
+    .chooseCharacter {
+    
+        text-align: center;
+    }
 
-.chooseCharacter {
-
-    text-align: center;
 }

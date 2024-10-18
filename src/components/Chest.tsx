@@ -10,7 +10,7 @@ import box from "../assets/HWP_Ind_Inv_Slot_1920x1080.png";
 import { Grid } from "@mantine/core";
 import textfield from "../assets/HWP_Inner_Inv_w_Textbox_1920x1080.png";
 import gavlans from "../assets/Gavlans_Game_Logo_v2.png";
-import hashashin from "../assets/Hassan_Lion_Logo_Alt.png";
+import hashashin from "../assets/Hassan_Discord_Lion_Logo.png";
 import statue from "../assets/Statue 112x112.png";
 import { useHover } from '@mantine/hooks';
 import arrow from "../assets/HWP_Yellow_Arrow_Sc200.gif";
