@@ -11,24 +11,28 @@ import { Title } from '@mantine/core';
 export default function Start() {
 
   return (
-    <>
-    <div className='titleContainer'>
-      <div className='titleText'>
-      <Title order={1} c={"gray"}> Hassan Shirazi
-      </Title>
+    <div className='main-page-div'>
+      <div className='blackBar'></div>
+      <div className='main-content-div'>
+        <div className='titleContainer'>
+          <div className='titleText'>
+          <Title order={1}> Hassan Shirazi
+          </Title>
+          </div>
+          <div className='chooseCharacter'>
+            <Title order={2}>
+              Choose Your Character!
+            </Title>
+          </div>
+        </div>
+          <Bonfire/>
+          <GreenGuy/>
+          <Cat/>
+          <BlueGuy/>
+          <BrownGuy/>
+          <Chest/>
       </div>
-      <div className='chooseCharacter'>
-        <Title order={2} c={"gray"}>
-          Choose Your Character!
-        </Title>
-      </div>
+      <div className='blackBar'></div>
     </div>
-      <Bonfire/>
-      <GreenGuy/>
-      <Cat/>
-      <BlueGuy/>
-      <BrownGuy/>
-      <Chest/>
-    </>
   );
 }

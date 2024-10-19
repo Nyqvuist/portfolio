@@ -1,8 +1,14 @@
-.blueGuyContainer{
 
+/* @media (width >= 1920px) {
+    :root {
+        --resolutionScale: .75;
+    }
+} */
+
+.blueGuyContainer{
     position: absolute;
-    top: 827px;
-    left: 882px;
+    top: calc(827px * var(--resolutionScale));
+    left: calc(882px * var(--resolutionScale));
 
 
     .blueGuy {
@@ -18,14 +24,14 @@
 
         .blueText {
             position: absolute;
-            top: -24px;
-            left: 82px;
+            top: calc(-24px);
+            left: calc(82px);
         }
 
         .arrowContainerBlue {
             position: absolute;
-            top: -65px;
-            left: 104px;
+            top: calc(-65px);
+            left: calc(104px);
         }
 
     }

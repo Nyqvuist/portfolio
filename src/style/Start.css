@@ -1,14 +1,52 @@
+@media (width >= 2560px) {
+    :root {
+        --resolutionScale: 1;
+    }
+    .main-content-div {
+        width: 2560px;
+    }
+}
+@media (1920px <= width <= 2559px) {
+    :root {
+        --resolutionScale: .75;
+    }
+    .main-content-div {
+        width: 1920px;
+    }
+}
+
 .titleContainer {
     padding-top: 180px;
 
     .titleText {
         text-align: center;
+        h1 {
+            color: #9EA8B3;
+        }
     }
-    
     
     .chooseCharacter {
-    
         text-align: center;
+        h2 {
+            color: #9EA8B3;
+        }
     }
-
 }
+
+.main-page-div {
+    display: flex;
+    flex-direction: row;
+}
+.blackBar {
+    background-color: black;
+    flex-grow: 1;
+}
+
+/* Resolutions to use
+2560 x 1440
+
+1920 x 1080
+
+1280 x 720
+
+854 x 480 */

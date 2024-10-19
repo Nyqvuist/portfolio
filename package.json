@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "npm run dev -- --open --port 3000",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
