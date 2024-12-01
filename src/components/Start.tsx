@@ -12,7 +12,6 @@ export default function Start() {
 
   return (
     <div className='main-page-div'>
-      <div className='blackBar'></div>
       <div className='main-content-div'>
         <div className='titleContainer'>
           <div className='titleText'>
@@ -32,7 +31,6 @@ export default function Start() {
           <BrownGuy/>
           <Chest/>
       </div>
-      <div className='blackBar'></div>
     </div>
   );
 }

@@ -1,8 +1,14 @@
-body {
+/* I think we'll want to mount the picture somewhere else */
+/* body {
   background: url("../src/assets/HWP_Static_BG_1920x1080.png") center center fixed no-repeat;
   background-size: cover;
   
+} */
+
+html, body, #root {
+  height: 100%;
 }
-
-
+body {
+  background-color:black;
+}
 
