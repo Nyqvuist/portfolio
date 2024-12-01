@@ -19,6 +19,10 @@
     }
 }
 
+.main-content-div {
+    position: relative;
+}
+
 .titleContainer {
     padding-top: 180px;
 
