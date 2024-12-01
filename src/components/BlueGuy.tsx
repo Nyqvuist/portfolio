@@ -29,11 +29,10 @@ export default function BlueGuy() {
           <></>
         )}
         <Image
+          className="blueGuyCharImg"
           src={hovered ? turnBlue : gifBlue}
           radius={"sm"}
           fit="fill"
-          h={220}
-          w={220}
         ></Image>
       </div>
     </div>

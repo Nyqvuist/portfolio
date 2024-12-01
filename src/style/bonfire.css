@@ -1,5 +1,7 @@
-.bonfire.bonfire {
+.bonfire {
     position: absolute;
-    top: calc(910px * var(--resolutionScale));
-    left: calc(740px * var(--resolutionScale));
+    top: calc(990px * var(--resolutionScale));
+    left: calc(760px * var(--resolutionScale));
+    height: calc(225px * var(--resolutionScale));
+    width: calc(1000px * var(--resolutionScale));
 }

@@ -8,8 +8,6 @@ export default function Bonfire() {
         className="bonfire"
         src={fire}
         fit="contain"
-        h={225}
-        w={1000}
       ></Image>
   )
 }

@@ -7,12 +7,10 @@
 
 .blueGuyContainer {
     position: absolute;
-    top: calc(827px * var(--resolutionScale));
-    left: calc(882px * var(--resolutionScale));
-
+    top: calc(910px * var(--resolutionScale));
+    left: calc(915px * var(--resolutionScale));
 
     .blueGuy {
-
         transition: transform .3s;
 
         .textContainerBlue {
@@ -21,21 +19,21 @@
             border-color: red;
             border-width: 1px;*/
         }
-
         .blueText {
             position: absolute;
-            top: calc(-24px);
-            left: calc(82px);
+            top: calc(-24px * var(--resolutionScale));
+            left: calc(70px * var(--resolutionScale));
         }
-
         .arrowContainerBlue {
             position: absolute;
-            top: calc(-65px);
-            left: calc(104px);
+            top: calc(-65px * var(--resolutionScale));
+            left: calc(90px * var(--resolutionScale));
         }
-
     }
-    
+}
+.blueGuyCharImg {
+    height: calc(200px * var(--resolutionScale));
+    width: calc(200px * var(--resolutionScale));
 }
 
 .blueGuy.blueGuy:hover {
