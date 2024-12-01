@@ -5,7 +5,7 @@
     }
 } */
 
-.blueGuyContainer{
+.blueGuyContainer {
     position: absolute;
     top: calc(827px * var(--resolutionScale));
     left: calc(882px * var(--resolutionScale));
