@@ -8,7 +8,7 @@
         height: 1440px;
     }
 }
-@media (1920px <= width <= 2559px) {
+@media (1920px <= width < 2560px) {
     :root {
         --resolutionScale: .75;
     }
@@ -16,6 +16,26 @@
         background-image: url("src/assets/background/HWP_Static_BG_1920x1080.png");
         width: 1920px;
         height: 1080px;
+    }
+}
+@media (1280px <= width < 1920px) {
+    :root {
+        --resolutionScale: .5;
+    }
+    .main-content-div {
+        background-image: url("src/assets/background/HWP_Static_BG_1280x720.png");
+        width: 1280px;
+        height: 720px;
+    }
+}
+@media (854px <= width < 1280px) {
+    :root {
+        --resolutionScale: .33;
+    }
+    .main-content-div {
+        background-image: url("src/assets/background/HWP_Static_BG_854x480.png");
+        width: 854px;
+        height: 480px;
     }
 }
 
