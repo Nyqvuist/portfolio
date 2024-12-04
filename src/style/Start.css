@@ -39,6 +39,23 @@
     }
 }
 
+h1, h2, h3 {
+    line-height: 0%;
+}
+h1, h2 {
+    color: #9EA8B3;
+}
+h1 {
+    font-size: calc(110px * var(--resolutionScale));
+}
+h2 {
+    font-size: calc(60px * var(--resolutionScale));
+}
+h3 {
+    font-size: calc(22px * var(--resolutionScale));
+    color: #ED5A70;
+}
+
 .main-content-div {
     position: relative;
 }

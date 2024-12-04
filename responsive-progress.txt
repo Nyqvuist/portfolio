@@ -11,7 +11,8 @@ Cat
 Chest
 GreenGuy
 4. Test individual scales.
-5. Done!
+5. Get modal to scale responsively.
+6. Done!
 
 BlueGuy
 Bonfire

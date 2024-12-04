@@ -3,7 +3,6 @@ import gifBlue from '../assets/HWP_Blu_Idle_Sc200.gif';
 import turnBlue from '../assets/HWP_Blu_Turn_Sc200.png';
 import { useHover } from '@mantine/hooks';
 import "../style/blueGuy.css";
-import { Title } from '@mantine/core';
 import arrow from "../assets/HWP_Yellow_Arrow_Sc200.gif";
 
 
@@ -17,12 +16,12 @@ export default function BlueGuy() {
         {hovered ? (
           <div className={"textContainerBlue"}>
             <div className="arrowContainerBlue">
-              <Image src={arrow} fit="fill" h={35} w={30} />
+              <Image src={arrow} fit="fill" />
             </div>
             <div className="blueText">
-              <Title order={3} c={"red"}>
+              <h3>
                 LinkedIn
-              </Title>
+              </h3>
             </div>
           </div>
         ) : (

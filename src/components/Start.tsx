@@ -5,7 +5,6 @@ import BrownGuy from "./BrownGuy";
 import GreenGuy from './GreenGuy';
 import Bonfire from "./Bonfire";
 import Chest from "./Chest";
-import { Title } from '@mantine/core';
 
 
 export default function Start() {
@@ -15,13 +14,13 @@ export default function Start() {
       <div className='main-content-div'>
         <div className='titleContainer'>
           <div className='titleText'>
-          <Title order={1}> Hassan Shirazi
-          </Title>
+          <h1> Hassan Shirazi
+          </h1>
           </div>
           <div className='chooseCharacter'>
-            <Title order={2}>
+            <h2>
               Choose Your Character!
-            </Title>
+            </h2>
           </div>
         </div>
           <Bonfire/>

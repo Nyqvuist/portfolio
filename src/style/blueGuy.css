@@ -21,13 +21,15 @@
         }
         .blueText {
             position: absolute;
-            top: calc(-24px * var(--resolutionScale));
+            top: calc(-28px * var(--resolutionScale));
             left: calc(70px * var(--resolutionScale));
         }
         .arrowContainerBlue {
             position: absolute;
             top: calc(-65px * var(--resolutionScale));
             left: calc(90px * var(--resolutionScale));
+            height: calc(35px * var(--resolutionScale));
+            width: calc(30px * var(--resolutionScale));
         }
     }
 }
