@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import chestOpen from "../assets/HWP_Chest_Opening_Sc200.gif";
 import chestClosed from "../assets/HWP_Chest_Eye_Sc200.gif";
 import { Image } from "@mantine/core";
@@ -23,6 +23,22 @@ export default function Chest() {
   const [details, setDetails] = React.useState("This site was created using React, MongoDB, Node.js, Express.js, and Material-UI. This is a fast paced trivia game where the faster the player answers the question right, the more points they get. Fullstack website hosted firebase with a custom database using MongoDB.");
   const [title, setTitle] = React.useState('Gavlans Game Website');
   const [icon, setIcon] = React.useState(gavlans);
+  const [modalSize, setModalSize] = React.useState("2300px");
+  const [resScale, setResScale] = React.useState("1");
+
+  const rootEl = document.getElementById("root");
+
+  useEffect(() => {
+    if (rootEl) {
+      const resScaleGrabbed = getComputedStyle(rootEl).getPropertyValue('--resolutionScale'); 
+      setResScale(resScaleGrabbed);
+      console.log(resScale);
+    } else {
+      console.log('Root element not found!');
+    }
+
+    setModalSize(`${parseFloat(resScale)*2300}px`);
+  });
 
   const discordClick = () => {
     setDetails("A discord bot created with discord.js. Using multiple API's like Pokemon and Steam to give users information with slash commands. MongoDB is being used for some commands, and the bot is hosted using AWS.");
@@ -51,10 +67,11 @@ export default function Chest() {
         className="modal"
         opened={opened}
         onClose={close}
-        size={"100%"}
         withCloseButton={false}
+        size={modalSize}
       >
-        <Grid align="stretch">
+        <Grid align="stretch"
+        className="internal-grid">
           <Grid.Col span={6} className="portfolio-item-col">
             <Grid gutter={"sm"}>
               <Grid.Col span={6}>
@@ -154,7 +171,10 @@ export default function Chest() {
         />
         </div> : <></>}
         <Image
-          onClick={() => setChest((prevMode) => !prevMode)}
+          onClick={() => setChest((prevMode) => {
+            
+            return !prevMode;
+          })}
           src={opened ? chestOpen : chestClosed}
           radius={"sm"}
           fit="fill"

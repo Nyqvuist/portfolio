@@ -17,11 +17,11 @@
     }
 }
 
-.chestContainer{
+.chestContainer {
     cursor: pointer;
 }
 
-.mantine-Modal-content{
+.mantine-Modal-content {
 
     background: url("../assets/HWP_Inv_1920x1080_200_W_Divider.png") no-repeat;
     background-size: cover;
