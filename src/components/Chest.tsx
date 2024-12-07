@@ -32,7 +32,6 @@ export default function Chest() {
     if (rootEl) {
       const resScaleGrabbed = getComputedStyle(rootEl).getPropertyValue('--resolutionScale'); 
       setResScale(resScaleGrabbed);
-      console.log(resScale);
     } else {
       console.log('Root element not found!');
     }
@@ -75,7 +74,7 @@ export default function Chest() {
           <Grid.Col span={6} className="portfolio-item-col">
             <Grid gutter={"sm"}>
               <Grid.Col span={6}>
-                <div className="gavlans-game-slot">
+                <div className={"gavlans-game-slot portfolio-item"}>
                 <Image
                   className="inv_slot"
                   src={box}
@@ -83,7 +82,7 @@ export default function Chest() {
                   h={`${heightAndWidth}`}
                   w={`${heightAndWidth}`}
                 />
-                <div className={"gg-slot-icon absolute"}>
+                <div className={"slot-icon absolute"}>
                   <Image
                     src={gavlans}
                     fit="fill"
@@ -91,7 +90,7 @@ export default function Chest() {
                   />
                 </div>
                 </div>
-                <div className="discord-slot">
+                <div className={"discord-slot portfolio-item"}>
                 <Image
                   className="inv_slot"
                   src={box}
@@ -99,7 +98,7 @@ export default function Chest() {
                   h={`${heightAndWidth}`}
                   w={`${heightAndWidth}`}
                 />
-                <div className={"discord-slot-icon absolute"}>
+                <div className={"slot-icon absolute"}>
                   <Image
                   src={hashashin}
                   fit="fill"
@@ -109,7 +108,7 @@ export default function Chest() {
                 </div>
               </Grid.Col>
               <Grid.Col span={6}>
-                <div className="game-slot">
+                <div className={"game-slot  portfolio-item"}>
                 <Image
                   className="inv_slot"
                   src={box}
@@ -117,7 +116,7 @@ export default function Chest() {
                   h={`${heightAndWidth}`}
                   w={`${heightAndWidth}`}
                 />
-                <div className={"game-slot-icon absolute"}>
+                <div className={"slot-icon absolute"}>
                   <Image
                     src={statue}
                     fit="fill"
@@ -138,7 +137,7 @@ export default function Chest() {
           <Grid.Col span={6}>
             <div className="description_div">
               <Image
-                className="inv_description"
+                className="inv_description_bg"
                 src={textfield}
                 fit="fill"
                 h={600}

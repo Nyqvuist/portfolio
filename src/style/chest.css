@@ -22,23 +22,24 @@
 }
 
 .mantine-Modal-content {
-
     background: url("../assets/HWP_Inv_1920x1080_200_W_Divider.png") no-repeat;
     background-size: cover;
-    height: 810px;
+    /* height: 810px; */
+    height: calc(810px * var(--resolutionScale));
+    width: calc(2300px * var(--resolutionScale));
 }
 
-.inv_slot.inv_slot{
-    
+.inv_slot {
     margin-top: 30px;
     cursor: pointer;
+
+    height: calc(250px * var(--resolutionScale)) !important;
+    width: calc(250px * var(--resolutionScale)) !important;
 }
 
-.inv_description.inv_description {
-    /* position: absolute;
-    top: 100px;
-    right: 100px; */
-
+.inv_description_bg {
+    width: calc(950px * var(--resolutionScale)) !important;
+    height: calc(600px * var(--resolutionScale)) !important;
 }
 
 .inv_divider.inv_divider {
@@ -46,93 +47,67 @@
     margin-left: 6px;
 }
 .portfolio-item-col {
-    padding-left: 160px;
-    padding-top: 85px;
+    padding-left: calc(160px * var(--resolutionScale));
+    padding-top: calc(85px * var(--resolutionScale));
 }
 
-.description_div.description_div {
+.description_div {
     position: relative;
-    width: calc(59.375rem* var(--mantine-scale));
-    height: calc(37.5rem* var(--mantine-scale));
+    width: calc(950px * var(--resolutionScale));
+    height: calc(600px * var(--resolutionScale));
     color: gray;
-    top: 100px;
-    left: 100px;
+    top: calc(100px * var(--resolutionScale));
+    left: calc(100px * var(--resolutionScale));
     .project-icon-div {
-        top: 75px;
-        left: 75px;
-        width: 145px;
-        height: 145px;
+        top: calc(75px * var(--resolutionScale));
+        left: calc(75px * var(--resolutionScale));
+        width: calc(145px * var(--resolutionScale));
+        height: calc(145px * var(--resolutionScale));
         /* background-color: red; */
     }
     .project-title-div {
-        top: 75px;
-        left: 265px;
-        width: 560px;
-        height: 145px;
+        top: calc(75px * var(--resolutionScale));
+        left: calc(265px * var(--resolutionScale));
+        width: calc(560px * var(--resolutionScale));
+        height: calc(145px * var(--resolutionScale));
         /* background-color: red; */
         .title-text {
-            font-size: 40px;
+            font-size: calc(40px * var(--resolutionScale));
         }
     }
     .project-details-div {
-        top: 265px;
-        left: 75px;
-        width: 750px;
-        height: 275px;
+        top: calc(265px * var(--resolutionScale));
+        left: calc(75px * var(--resolutionScale));
+        width: calc(750px * var(--resolutionScale));
+        height: calc(275px * var(--resolutionScale));
         /* background-color: red; */
         .details-text{
-            font-size: 35px;
+            font-size: calc(35px * var(--resolutionScale));
         }
     }
 }
 
+.portfolio-item {
+    height: calc(250px * var(--resolutionScale));
+    width: calc(250px * var(--resolutionScale));
+}
+.slot-icon {
+    height: calc(205px * var(--resolutionScale));
+    width: calc(207px * var(--resolutionScale));
+    bottom: calc(25px * var(--resolutionScale));
+    left: calc(25px * var(--resolutionScale));
+    cursor: pointer;
+}
 .gavlans-game-slot {
     position: relative;
-    height: 250px;
-    width: 250px;
-    
-
-    .gg-slot-icon {
-        /* background-color: red; */
-        height: 205px;
-        width: 207px;
-        bottom: 23px;
-        left: 22px;
-        cursor: pointer;
-    }
-
 }
 
 .discord-slot {
     position: relative;
-    height: 250px;
-    width: 250px;
-
-    .discord-slot-icon {
-        /* background-color: red; */
-        height: 205px;
-        width: 207px;
-        bottom: 23px;
-        left: 22px;
-        cursor: pointer;
-    }
-
 }
 
 .game-slot {
     position: relative;
-    height: 250px;
-    width: 250px;
-
-    .game-slot-icon {
-        /* background-color: red; */
-        height: 205px;
-        width: 207px;
-        bottom: 23px;
-        left: 22px;
-        cursor: pointer;
-    }
-
 }
 
 /* @media (width <= 2550px) {
