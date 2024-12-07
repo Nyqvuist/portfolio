@@ -24,7 +24,6 @@
 .mantine-Modal-content {
     background: url("../assets/HWP_Inv_1920x1080_200_W_Divider.png") no-repeat;
     background-size: cover;
-    /* height: 810px; */
     height: calc(810px * var(--resolutionScale));
     width: calc(2300px * var(--resolutionScale));
 }
@@ -109,10 +108,3 @@
 .game-slot {
     position: relative;
 }
-
-/* @media (width <= 2550px) {
-    .absolute {
-        position: absolute;
-        background-color:blue !important;
-    }
-} */
