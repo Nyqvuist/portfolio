@@ -165,8 +165,6 @@ export default function Chest() {
         <Image
           src={arrow}
           fit='fill'
-          h={35}
-          w={30}
         />
         </div> : <></>}
         <Image
@@ -174,11 +172,10 @@ export default function Chest() {
             
             return !prevMode;
           })}
+          className="chestImg"
           src={opened ? chestOpen : chestClosed}
           radius={"sm"}
           fit="fill"
-          h={100}
-          w={180}
         />
         </div>
       </div>

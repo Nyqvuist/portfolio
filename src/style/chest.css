@@ -4,18 +4,26 @@
 
 .chestContainer{
     position: absolute;
-    top: 909px;
-    left: 1318px;
+    top: calc(990px * var(--resolutionScale));
+    left: calc(1400px * var(--resolutionScale));
     /*border-style: solid;
     border-color: red;
     border-width: 1px;*/
 
     .arrowContainerChest {
         position: absolute;
-        top: -54px;
-        left: 50px;
+        top: calc(-54px * var(--resolutionScale));
+        left: calc(50px * var(--resolutionScale));
+        height: calc(35px * var(--resolutionScale));
+        width: calc(30px * var(--resolutionScale));
     }
 }
+
+.chestImg {
+    height: calc(111px * var(--resolutionScale));
+    width: calc(200px * var(--resolutionScale));
+}
+
 
 .chestContainer {
     cursor: pointer;

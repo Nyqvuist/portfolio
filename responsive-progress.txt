@@ -4,11 +4,11 @@ Steps to make Hassan's profile responsive.
 =1.1 Put background image on a parent div.
 =2. Create different scaled background iamges to meet various resolution demands.
 3. Set up background images + character images for each desired scale.
-BlueGuy ? having issues with the text and arrow over his head
+=BlueGuy
 =Bonfire
 BrownGuy
 Cat
-Chest
+=Chest
 GreenGuy
 4. Test individual scales.
 5. Get modal to scale responsively.
